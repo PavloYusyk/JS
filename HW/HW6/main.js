@@ -252,8 +252,8 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
-let sass = coursesArray.filter((item) => item.modules.find((elem) => elem === 'sass'));
+let sass = coursesArray.filter((item) => item.modules.includes('sass'));
 console.log(sass);
-let docker = coursesArray.filter((item) => item.modules.find((elem) => elem === 'docker'));
+let docker = coursesArray.filter((item) => item.modules.includes('docker'));
 console.log(docker)
 
