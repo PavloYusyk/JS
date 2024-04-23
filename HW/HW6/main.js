@@ -254,6 +254,6 @@ let coursesArray = [
 ];
 let sass = coursesArray.filter((item) => item.modules.includes('sass'));
 console.log(sass);
-let docker = coursesArray.filter((item) => item.modules.includes('docker'));
+let docker = coursesArray.filter((item) => item.modules.find((elem) => elem === 'docker'));
 console.log(docker)
 
